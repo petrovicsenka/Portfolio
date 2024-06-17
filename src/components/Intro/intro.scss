@@ -1,0 +1,69 @@
+#intro {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: calc(100% - 5rem);
+  width: 100vw;
+  max-width: 85rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.btnImg {
+  object-fit: cover;
+  margin: 0rem 0.5rem 0rem 0.2rem;
+  height: 2vh;
+}
+
+.introContent {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.introName {
+  color: #FDDA0D;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.bg {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  object-fit: cover;
+  height: auto;
+  max-height: 80vh;
+  align-self: center;
+  justify-self: end;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
