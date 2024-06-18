@@ -1,16 +1,14 @@
-import './navbar.scss';
+import './Navbar.scss';
 import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.svg';
 import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
-  // return <div>navbar</div>;
   return (
     <nav className='navbar'>
       <img src={logo} alt='Logo' className='logo' />
       <div className='desktopMenu'>
-        {/* <Link className="desktopMenuListItem"></Link> */}
         <Link id='section1' to="section1" className="desktopMenuListItem" smooth={true} duration={500}>
           Home
         </Link>

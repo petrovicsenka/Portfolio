@@ -1,4 +1,4 @@
-import './intro.scss';
+import './Intro.scss';
 import bg from '../../assets/image.png';
 import btnImg from '../../assets/hire-me.svg';
 import { Link } from 'react-scroll';
