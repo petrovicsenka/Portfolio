@@ -1,5 +1,6 @@
 .navbar {
-  height: 5rem;
+  background: #1E1E1E;
+  height: 6rem;
   width: 100vw;
   max-width: 85rem;
   margin: 0 auto;
@@ -26,7 +27,7 @@
 .desktopMenuListItem:hover {
   color: 	#ffffff;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid;
+  border-bottom: 1px solid;
 }
 
 .desktopMenuBtn {

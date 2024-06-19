@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import logo from '../../../public/logo.png';
+import logo from '/logo.png';
 import contactImg from '../../assets/contact.svg';
 import { Link } from 'react-scroll';
 
