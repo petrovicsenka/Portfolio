@@ -1,4 +1,4 @@
-#skills {
+#whatIDo {
   overflow: hidden;
   width: 100vw;
   max-width: 65rem;
@@ -10,28 +10,28 @@
   margin: 0 auto;
 }
 
-.skillTitle {
+.whatIDoTitle {
   font-size: 3rem;
   font-weight: 600;
   padding-top: 3rem;
   margin-bottom: 1rem;
 }
 
-.skillDesc {
+.whatIDoDesc {
   font-weight: 400;
   font-size: 1.08rem;
   max-width: 50rem;
   padding: 0 2rem;
 }
 
-.skillBars {
+.whatIDoBars {
   margin: 1.5rem;
   width: 100vw;
   max-width: 80%;
   text-align: left;
 }
 
-.skillBar {
+.whatIDoBar {
   display: flex;
   margin: 1rem;
   padding: 0.8rem 2rem;
@@ -39,24 +39,24 @@
   background: #323232;
 }
 
-.skillBarImg {
+.whatIDoBarImg {
   object-fit: cover;
   height: 4rem;
   margin-right: 1rem;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
 }
 
-.skillBarText h2 {
+.whatIDoBarText h2 {
   color: #9297ff;
 }
 
-.skillBarText p {
-  font-size: 01rem;
+.whatIDoBarText p {
+  font-size: 1rem;
   font-weight: 200;
 }
 
 @media screen and (max-width: 720px) {
-  .skillBarText p {
-    font-size: 2.5vw;
+  .whatIDoBarText p {
+    font-size: 3.5vw;
   }
 }

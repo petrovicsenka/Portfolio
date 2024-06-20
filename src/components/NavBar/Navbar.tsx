@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <button className='desktopMenuBtn'>
         <img src={contactImg} alt='' className='desktopMenuImg' />
-        Contact Me
+        Contact me
       </button>
     </nav>
   )
