@@ -1,5 +1,6 @@
 import './App.css';
-import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
+// import Experience from './components/Experience/Experience';
 import Intro from './components/Intro/Intro';
 import Navbar from './components/NavBar/Navbar';
 import Skills from './components/Skills/Skills';
@@ -11,7 +12,9 @@ function App() {
       <Navbar />
       <Intro />
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
+      {/* <Education /> */}
+      <Contact />
     </div>
   )
 }
