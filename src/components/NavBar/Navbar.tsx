@@ -9,17 +9,18 @@ const Navbar = () => {
     <nav className='navbar'>
       <img src={logo} alt='Logo' className='logo' />
       <div className='desktopMenu'>
-        <Link id='section1' to="section1" className="desktopMenuListItem" smooth={true} duration={500}>
+        <Link id='section1' activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
           Home
         </Link>
-        <Link id='section2' to="section2" className="desktopMenuListItem" smooth={true} duration={500}>
+        <Link id='section2' activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
           About
         </Link>
-        <Link id='section3' to="section3" className="desktopMenuListItem" smooth={true} duration={500}>
+        {/* to update after other sections are created: */}
+        {/* <Link id='section3' activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
           Portfolio
-        </Link>
-        <Link id='section4' to="section4" className="desktopMenuListItem" smooth={true} duration={500}>
-          Clients
+        </Link> */}
+        <Link id='section4' activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
+          Contact
         </Link>
       </div>
       <button className='desktopMenuBtn'>

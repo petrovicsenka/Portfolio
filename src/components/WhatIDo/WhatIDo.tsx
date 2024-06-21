@@ -7,7 +7,7 @@ import agileMethodology from '../../assets/agile-methodology.svg';
 
 const WhatIDo = () => {
   return (
-    <section id='whatIDo'>
+    <section id='about'>
       <span className='whatIDoTitle'>What I do</span>
       <span className='whatIDoDesc'>From concept to reality, I bring ideas to life through detailed implementation. Each project is an opportunity to transform vision into concrete, user-centric experiences.</span>
       <div className='whatIDoBars'>
