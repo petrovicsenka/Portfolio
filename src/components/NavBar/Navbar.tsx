@@ -3,10 +3,23 @@ import logo from '/logo.png';
 import contactImg from '../../assets/contact.svg';
 import menu from '../../assets/burger-menu.svg';
 import { Link } from 'react-scroll';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 720) {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <nav className='navbar'>
@@ -42,7 +55,7 @@ const Navbar = () => {
         </Link>
       </div>
     </nav>
-  )
+  );
 };
 
 export default Navbar;
