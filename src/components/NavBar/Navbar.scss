@@ -53,3 +53,53 @@
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ffffff;
 }
+
+.navMenu {
+  position: absolute;
+  top: 5rem;
+  right: 4.3rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 12rem;
+  background: #323232;
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+}
+
+.listItem {
+  padding: 0.3rem 3rem;
+  margin: 0.25rem 0;
+  background: #1E1E1E;
+}
+
+.listItem:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.mobMenuIcon {
+  display: none;
+  object-fit: cover;
+  height: 3rem;
+}
+
+.mobMenuIcon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width:720px) {
+  .mobMenuIcon {
+    display: flex;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopMenuBtn {
+    display: none;
+  }
+}
