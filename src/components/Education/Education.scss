@@ -112,4 +112,23 @@ body {
   .education::before {
     left: 0;
   }
+
+  .educationItem {
+    margin: 1.5rem;
+    width: auto;
+  }
+
+  .educationItem:nth-child(odd) {
+    margin-left: 40px;
+  }
+
+  .educationItem:nth-child(odd)::before {
+    left: -36px;
+  }
+  
+  .educationItem:nth-child(even) {
+    left: 0;
+    text-align: left;
+  }
+  
 }
