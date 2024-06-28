@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './components/Contact/Contact';
+import Education from './components/Education/Education';
 import Footer from './components/Footer/Footer';
 // import Experience from './components/Experience/Experience';
 import Intro from './components/Intro/Intro';
@@ -15,7 +16,7 @@ function App() {
       <WhatIDo />
       {/* Skills */}
       {/* <Experience /> */}
-      {/* <Education /> */}
+      <Education />
       <Contact />
       <Footer />
     </div>

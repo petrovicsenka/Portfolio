@@ -31,10 +31,9 @@ const Navbar = () => {
         <Link id='section2' activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
           About
         </Link>
-        {/* to update after other sections are created: */}
-        {/* <Link id='section3' activeClass='active' to='intro' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
-          Portfolio
-        </Link> */}
+        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+          Education
+        </Link>
       </div>
       <button className='desktopMenuBtn' onClick={() => {
         document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
@@ -52,6 +51,9 @@ const Navbar = () => {
         </Link>
         <Link id='section2' activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
           Contact
+        </Link>
+        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
+          Education
         </Link>
       </div>
     </nav>

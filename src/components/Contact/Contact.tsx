@@ -9,7 +9,7 @@ const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-  if (form.current) {  
+  if (form.current) {
     emailjs
       .sendForm('service_egdf539', 'template_i69ehmr', form.current, 'H8UlXL3S_GwVuKuB2')
       .then(

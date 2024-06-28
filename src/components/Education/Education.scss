@@ -1,0 +1,115 @@
+#education { //mozda i ovo izdvoj u posebnu klasu, ponavlja se
+  padding-top: 3rem;
+}
+
+.educationPageTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.timelineTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.education {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.education::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.educationItem {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+
+  background: #323232;
+  padding: 1rem 2rem; //
+  // margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.educationItem:nth-child(odd) {
+  left: 0;
+  margin-left: -40px;
+}
+
+.educationItem:nth-child(even) {
+  left: 50%;
+  text-align: right;
+  margin-left: 40px;
+}
+
+.educationItem::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  right: -36px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #323232;
+}
+
+.educationItem:nth-child(even)::before {
+  left: -36px;
+}
+
+.timelineDate {
+  position: absolute;
+  top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.educationItem:nth-child(odd) .timelineDate {
+  right: -3rem;
+}
+
+.educationItem:nth-child(even) .timelineDate {
+  left: -3rem;
+}
+
+.educationItem h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.educationItem p {
+  margin: 0.5rem 0;
+  font-weight: 200;
+}
+
+.educationText { //ovu klasu isto izdvoj
+  color: #9297ff;
+}
+
+@media screen and (max-width: 1170px) {
+  .education::before {
+    left: 0;
+  }
+}

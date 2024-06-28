@@ -8,12 +8,12 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .whatIDoTitle {
   font-size: 3rem;
   font-weight: 600;
-  padding-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -46,7 +46,7 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
 }
 
-.whatIDoBarText h2 {
+.whatIDoBarText h2 { //ovu klasu isto izdvoj, ponavlja se u education
   color: #9297ff;
 }
 
