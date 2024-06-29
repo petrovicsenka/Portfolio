@@ -32,6 +32,12 @@ const Navbar = () => {
           About
         </Link>
         <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+          Skills
+        </Link>
+        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+          Experience
+        </Link>
+        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
           Education
         </Link>
       </div>
@@ -49,11 +55,17 @@ const Navbar = () => {
         <Link id='section2' activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
           About
         </Link>
-        <Link id='section2' activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
-          Contact
+        <Link id='section3' activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
+          Skills
+        </Link>
+        <Link id='section3' activeClass='active' to='experience' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
+          Experience
         </Link>
         <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
           Education
+        </Link>
+        <Link id='section2' activeClass='active' to='contact' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>
+          Contact
         </Link>
       </div>
     </nav>

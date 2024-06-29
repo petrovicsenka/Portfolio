@@ -2,7 +2,7 @@ import './App.css';
 import Contact from './components/Contact/Contact';
 import Education from './components/Education/Education';
 import Footer from './components/Footer/Footer';
-// import Experience from './components/Experience/Experience';
+import Experience from './components/Experience/Experience';
 import Intro from './components/Intro/Intro';
 import Navbar from './components/NavBar/Navbar';
 import WhatIDo from './components/WhatIDo/WhatIDo';
@@ -15,7 +15,7 @@ function App() {
       <Intro />
       <WhatIDo />
       {/* Skills */}
-      {/* <Experience /> */}
+      <Experience />
       <Education />
       <Contact />
       <Footer />
