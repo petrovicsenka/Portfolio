@@ -7,7 +7,7 @@ const Education = () => {
 
       <div className='education'>
         <div className='educationItem'>
-          <h2 className='educationText'>
+          <h2 className='blueText'>
             Faculty of Organizational Sciences, University of Belgrade
           </h2>
           <p>2019 - 2020</p>
@@ -15,7 +15,7 @@ const Education = () => {
           <p>Department of Information Systems and Technologies</p>
         </div>
         <div className='educationItem'>
-          <h2 className='educationText'>
+          <h2 className='blueText'>
             Faculty of Organizational Sciences, University of Belgrade
           </h2>
           <p>2014 - 2019</p>
@@ -23,7 +23,7 @@ const Education = () => {
           <p>Department of Information Systems and Technologies</p>
         </div>
         <div className='educationItem'>
-          <h2 className='educationText'>Zemun Gymnasium, Belgrade</h2>
+          <h2 className='blueText'>Zemun Gymnasium, Belgrade</h2>
           <p>2010 - 2014</p>
           <p>Department of Natural Sciences and Mathematics</p>
         </div>

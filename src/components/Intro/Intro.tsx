@@ -8,7 +8,7 @@ const Intro = () => {
     <section id='intro'>
       <div className='introContent'>
         <span className='hello'>Hello, </span>
-        <span className='introtext'>I am <span className='introName'>Senka Petrović,</span> <br />Software Engineer</span>
+        <span>I am <span className='blueText'>Senka Petrović,</span> <br />Software Engineer</span>
         <p className="introPara">
           I am a Master Engineer in the field of Information Systems and Technologies focused on web application development using Angular, React and Gatsby. I have a proven track record of creating visually appealing and user-friendly interfaces.
         </p>

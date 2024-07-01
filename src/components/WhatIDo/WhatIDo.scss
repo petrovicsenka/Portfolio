@@ -40,17 +40,23 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
 }
 
-.whatIDoBarText h2 { //ovu klasu isto izdvoj, ponavlja se u education
-  color: #9297ff;
-}
+.whatIDoBarText {
+  h2 {
+    color: #9297ff;
+  }
 
-.whatIDoBarText p {
-  font-size: 1rem;
-  font-weight: 200;
+  p {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.3rem;
+  }
+
 }
 
 @media screen and (max-width: 720px) {
-  .whatIDoBarText p {
-    font-size: 3.5vw;
+  .whatIDoBarText { 
+    p {
+      font-size: 3.5vw;
+    }
   }
 }

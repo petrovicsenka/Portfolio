@@ -31,10 +31,10 @@ const Navbar = () => {
         <Link id='section2' activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
           About
         </Link>
-        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+        <Link id='section3' activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
           Skills
         </Link>
-        <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+        <Link id='section3' activeClass='active' to='experience' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
           Experience
         </Link>
         <Link id='section3' activeClass='active' to='education' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>

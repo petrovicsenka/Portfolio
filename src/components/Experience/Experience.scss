@@ -4,34 +4,58 @@
 
 //==========================
 
-#experience { //napravi da bude analogno sa ostalim scss fajlovima
+#experience {
   padding: 20px;
+  padding-top: 3rem;
+  margin: auto;
+  width: 100vw;
+  max-width: 55rem;
+}
 
-  .sectionTitle, .experienceDesc {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
+.sectionTitle, .experienceDesc {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.experienceDesc {
+  font-weight: 400;
+  font-size: 1.08rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  background: #323232;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #9297ff;
   }
 
-  .experienceItem {
-    margin-bottom: 20px;
+  p {
+    margin: 0.3rem;
+    font-size: 1rem;
+    font-weight: 200;
+  }
 
-    h3 {
-      margin: 0;
-      font-size: 1.5em;
-      color: #ffffff;
-    }
+  ul {
+    margin: 0.3rem 0.3rem 0.3rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: justify;
 
-    span {
-      display: block;
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
-
-    p {
-      margin: 0;
-      color: #ffffff;
+    li {
+      margin-bottom: 4px;
     }
   }
 }
+// }

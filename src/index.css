@@ -65,9 +65,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-.sectionTitle {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}

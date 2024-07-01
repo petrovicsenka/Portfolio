@@ -13,3 +13,13 @@ body {
   overflow: hidden;
   overflow-y: scroll;
 }
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blueText {
+  color: #9297ff;
+}

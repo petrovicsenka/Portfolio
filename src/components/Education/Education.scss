@@ -10,7 +10,7 @@ body {
 
 .timelineTitle {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .education {
@@ -37,10 +37,8 @@ body {
   position: relative;
   width: 50%;
   box-sizing: border-box;
-
   background: #323232;
-  padding: 1rem 2rem; //
-  // margin: 0.5rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -96,10 +94,6 @@ body {
 .educationItem p {
   margin: 0.5rem 0;
   font-weight: 200;
-}
-
-.educationText { //ovu klasu isto izdvoj
-  color: #9297ff;
 }
 
 @media screen and (max-width: 1170px) {
