@@ -6,6 +6,7 @@ import Experience from './components/Experience/Experience';
 import Intro from './components/Intro/Intro';
 import Navbar from './components/NavBar/Navbar';
 import WhatIDo from './components/WhatIDo/WhatIDo';
+import Skills from './components/Skills/Skills';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Intro />
       <WhatIDo />
-      {/* Skills */}
+      <Skills />
       <Experience />
       <Education />
       <Contact />
