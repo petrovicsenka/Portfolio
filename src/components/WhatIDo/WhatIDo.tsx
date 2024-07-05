@@ -1,6 +1,6 @@
-import './WhatIDo.scss';
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
+import './WhatIDo.scss';
 import planningAndAnalysis from '../../assets/planning-and-analysis.svg';
 import customSolutionDevelopment from '../../assets/custom-soluton-development.svg';
 import responsiveWebDesign from '../../assets/responsive-web-design.svg';
