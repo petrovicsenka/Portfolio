@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 import './Skills.scss';
 
 const skillsData = [
@@ -36,10 +38,20 @@ const Skills = () => {
       <span className='sectionTitle'>Skills</span>
       <div className='list'>
         {skillsData.map((skillGroup, index) => (
-          <div className='skillBar' key={index}>
-            <h3>{skillGroup.category}</h3>
-            <div>{skillGroup.skills}</div>
-          </div>
+          <InView threshold={0.25} triggerOnce={true} key={index}>
+            {({ inView, ref }) => (
+              <motion.div
+                ref={ref}
+                className='skillBar'
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+              >
+                <h3>{skillGroup.category}</h3>
+                <div>{skillGroup.skills}</div>
+              </motion.div>
+            )}
+          </InView>
         ))}
       </div>
     </section>

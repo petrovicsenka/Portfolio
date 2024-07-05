@@ -2,6 +2,7 @@ import './Navbar.scss';
 import logo from '/logo.png';
 import contactImg from '../../assets/contact.svg';
 import menu from '../../assets/burger-menu.svg';
+import closeIcon from '../../assets/close-burger-menu.svg';
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
@@ -60,7 +61,7 @@ const Navbar = () => {
         Contact me
       </button>
       <img
-        src={menu}
+        src={showMenu ? closeIcon : menu}
         alt='Menu'
         className='mobMenuIcon'
         onClick={() => setShowMenu(!showMenu)}

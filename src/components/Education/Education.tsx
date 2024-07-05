@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 import './Education.scss';
 
 const educationDetails = [
@@ -27,10 +29,31 @@ const Education = () => {
       <div className='education'>
         {educationDetails.map((education, index) => (
           <div className='educationItem' key={index}>
-            <h2 className='blueText'>{education.institution}</h2>
-            <p>{education.period}</p>
-            {education.degree && <p>{education.degree}</p>}
-            <p>{education.department}</p>
+            <InView threshold={0.1} triggerOnce={true}>
+              {({ inView, ref }) => (
+                <motion.div
+                  ref={ref}
+                  initial='hidden'
+                  animate={inView ? 'visible' : 'hidden'}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: {
+                      opacity: 1,
+                      scale: 1,
+                      transition: {
+                        duration: 0.6,
+                        delay: index * 0.2,
+                      },
+                    },
+                  }}
+                >
+                  <h2 className='blueText'>{education.institution}</h2>
+                  <p>{education.period}</p>
+                  {education.degree && <p>{education.degree}</p>}
+                  <p>{education.department}</p>
+                </motion.div>
+              )}
+            </InView>
           </div>
         ))}
       </div>
