@@ -5,6 +5,7 @@ import menu from '../../assets/burger-menu.svg';
 import closeIcon from '../../assets/close-burger-menu.svg';
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const navItems = [
   { id: 'intro', label: 'Home', offset: -100 },
@@ -66,7 +67,14 @@ const Navbar = () => {
         className='mobMenuIcon'
         onClick={() => setShowMenu(!showMenu)}
       />
-      <div className='navMenu' style={{ display: showMenu ? 'flex' : 'none' }}>
+      <motion.div
+        className='navMenu'
+        style={{
+          display: 'flex',
+          opacity: showMenu ? 1 : 0,
+          transition: 'opacity 0.7s ease',
+        }}
+      >
         {navItems.map((item, index) => (
           <Link
             key={index}
@@ -82,7 +90,7 @@ const Navbar = () => {
             {item.label}
           </Link>
         ))}
-      </div>
+      </motion.div>
     </nav>
   );
 };
