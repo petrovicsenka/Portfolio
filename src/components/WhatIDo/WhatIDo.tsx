@@ -1,4 +1,6 @@
 import './WhatIDo.scss';
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 import planningAndAnalysis from '../../assets/planning-and-analysis.svg';
 import customSolutionDevelopment from '../../assets/custom-soluton-development.svg';
 import responsiveWebDesign from '../../assets/responsive-web-design.svg';
@@ -53,16 +55,35 @@ const WhatIDo = () => {
       </span>
       <div className='whatIDoBars'>
         {activities.map((activity, index) => (
-          <div className='whatIDoBar' key={index}>
-            <img
-              src={activity.imgSrc}
-              alt={activity.alt}
-              className='whatIDoBarImg'
-            />
-            <div className='whatIDoBarText'>
-              <h2>{activity.title}</h2>
-              <p>{activity.description}</p>
-            </div>
+          <div key={index}>
+            <InView threshold={0.25} triggerOnce={true}>
+              {({ inView, ref }) => (
+                <motion.div
+                  ref={ref}
+                  className='whatIDoBar'
+                  initial='hidden'
+                  animate={inView ? 'visible' : 'hidden'}
+                  variants={{
+                    hidden: { x: index % 2 === 0 ? -150 : 150, opacity: 0 },
+                    visible: {
+                      x: 0,
+                      opacity: 1,
+                      transition: { duration: 1.6 },
+                    },
+                  }}
+                >
+                  <img
+                    src={activity.imgSrc}
+                    alt={activity.alt}
+                    className='whatIDoBarImg'
+                  />
+                  <div className='whatIDoBarText'>
+                    <h2>{activity.title}</h2>
+                    <p>{activity.description}</p>
+                  </div>
+                </motion.div>
+              )}
+            </InView>
           </div>
         ))}
       </div>
