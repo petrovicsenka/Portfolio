@@ -43,6 +43,7 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  cursor: url('/cursor-hand-icon.svg'), auto;
   transition: border-color 0.25s;
 }
 button:hover {

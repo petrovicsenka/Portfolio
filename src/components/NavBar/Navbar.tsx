@@ -70,7 +70,7 @@ const Navbar = () => {
       <motion.div
         className='navMenu'
         style={{
-          display: 'flex',
+          display: showMenu ? 'flex' : 'none',
           opacity: showMenu ? 1 : 0,
           transition: 'opacity 0.7s ease',
         }}
