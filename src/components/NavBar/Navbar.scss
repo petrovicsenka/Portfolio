@@ -28,7 +28,6 @@
   color: #ffffff;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid;
-  cursor: url('/cursor-hand-icon.svg'), auto;
 }
 
 .desktopMenuBtn {
@@ -77,20 +76,13 @@
 }
 
 .listItem:hover {
-  cursor: pointer;
   color: #ffffff;
-  cursor: url('/cursor-hand-icon.svg'), auto;
 }
 
 .mobMenuIcon {
   display: none;
   object-fit: cover;
   height: 3rem;
-}
-
-.mobMenuIcon:hover {
-  cursor: pointer;
-  cursor: url('/cursor-hand-icon.svg'), auto;
 }
 
 @media screen and (max-width:800px) {
