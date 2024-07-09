@@ -4,7 +4,7 @@ import contactImg from '../../assets/contact.svg';
 import menu from '../../assets/burger-menu.svg';
 import closeIcon from '../../assets/close-burger-menu.svg';
 import { Link } from 'react-scroll';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const navItems = [
@@ -17,6 +17,8 @@ const navItems = [
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const iconRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,9 +27,21 @@ const Navbar = () => {
       }
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        !menuRef.current?.contains(event.target as Node) &&
+        !iconRef.current?.contains(event.target as Node)
+      ) {
+        setShowMenu(false);
+      }
+    };
+
     window.addEventListener('resize', handleResize);
+    document.addEventListener('mousedown', handleClickOutside);
+
     return () => {
       window.removeEventListener('resize', handleResize);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -65,9 +79,13 @@ const Navbar = () => {
         src={showMenu ? closeIcon : menu}
         alt='Menu'
         className='mobMenuIcon'
-        onClick={() => setShowMenu(!showMenu)}
+        ref={iconRef}
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
       />
       <motion.div
+        ref={menuRef}
         className='navMenu'
         style={{
           display: showMenu ? 'flex' : 'none',
