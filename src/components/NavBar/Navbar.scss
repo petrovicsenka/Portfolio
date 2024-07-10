@@ -1,5 +1,5 @@
 .navbar {
-  background: #1E1E1E;
+  background: #1e1e1e;
   height: 6rem;
   width: 100vw;
   max-width: 85rem;
@@ -21,7 +21,6 @@
 
 .desktopMenuListItem {
   margin: 1rem;
-  cursor: pointer;
 }
 
 .desktopMenuListItem:hover {
@@ -31,7 +30,7 @@
 }
 
 .desktopMenuBtn {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
   border: none;
   display: flex;
@@ -72,7 +71,7 @@
 .listItem {
   padding: 0.3rem 3rem;
   margin: 0.25rem 0;
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 
 .listItem:hover {
@@ -85,7 +84,7 @@
   height: 3rem;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .mobMenuIcon {
     display: flex;
   }
@@ -97,4 +96,46 @@
   .desktopMenuBtn {
     display: none;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  z-index: 1000;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+.enlargedLogo {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
 }

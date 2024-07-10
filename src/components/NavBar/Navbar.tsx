@@ -2,10 +2,11 @@ import './Navbar.scss';
 import logo from '/logo.png';
 import contactImg from '../../assets/contact.svg';
 import menu from '../../assets/burger-menu.svg';
-import closeIcon from '../../assets/close-burger-menu.svg';
+import closeIcon from '../../assets/close.svg';
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Modal from 'react-modal';
 
 const navItems = [
   { id: 'intro', label: 'Home', offset: -100 },
@@ -17,6 +18,7 @@ const navItems = [
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const iconRef = useRef<HTMLImageElement>(null);
 
@@ -45,9 +47,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <nav className='navbar'>
-      <img src={logo} alt='Logo' className='logo' />
+      <img src={logo} alt='Logo' className='logo' onClick={toggleModal} />
       <div className='desktopMenu'>
         {navItems.map((item, index) => (
           <Link
@@ -109,6 +115,21 @@ const Navbar = () => {
           </Link>
         ))}
       </motion.div>
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={toggleModal}
+        contentLabel='Enlarged Logo'
+        className='modal'
+        overlayClassName='overlay'
+      >
+        <img src={logo} alt='Enlarged Logo' className='enlargedLogo' />
+        <img
+          src={closeIcon}
+          alt='Close'
+          className='closeButton'
+          onClick={toggleModal}
+        />
+      </Modal>
     </nav>
   );
 };
