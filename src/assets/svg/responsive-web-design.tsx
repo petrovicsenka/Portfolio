@@ -1,19 +1,11 @@
 interface Props {
   className?: string;
-  width?: string;
-  height?: string;
 }
 
-export const ResponsiveWebDesign: React.FC<Props> = ({
-  className,
-  // width = '33rem',
-  // height = '35rem',
-}) => {
+export const ResponsiveWebDesign: React.FC<Props> = ({ className }) => {
   return (
     <svg
       className={className}
-      // width={width}
-      // height={height}
       version='1.0'
       xmlns='http://www.w3.org/2000/svg'
       width='512.000000pt'

@@ -1,13 +1,9 @@
 interface Props {
   className?: string;
-  // width?: string;
-  // height?: string;
 }
 
-// , width = '13rem', height = '5rem'
 export const PlanningAndAnalysis: React.FC<Props> = ({ className }) => {
   return (
-    // width={width} height={height}
     <svg
       className={className}
       version='1.0'

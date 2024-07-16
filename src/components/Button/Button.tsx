@@ -1,15 +1,3 @@
-// import './Contact.scss';
-
-// interface Props {
-//   img?: string;
-// }
-
-// const Button: React.FC<Props> = ({ img }) => {
-//   return <button></button>;
-// };
-
-// export default Button;
-
 import React from 'react';
 import './Button.scss';
 

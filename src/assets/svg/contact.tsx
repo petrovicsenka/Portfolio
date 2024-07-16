@@ -1,7 +1,5 @@
 interface Props {
   className?: string;
-  // width?: string;
-  // height?: string;
 }
 
 export const Contact: React.FC<Props> = ({ className }) => {
