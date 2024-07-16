@@ -12,7 +12,8 @@
   max-width: 55rem;
 }
 
-.sectionTitle, .experienceDesc {
+.sectionTitle,
+.experienceDesc {
   display: block;
   text-align: center;
   margin: auto;
@@ -25,6 +26,10 @@
   font-size: 1.08rem;
   max-width: 50rem;
   padding: 0 2rem;
+}
+
+.experienceItems {
+  overflow-x: hidden;
 }
 
 .experienceItem {
