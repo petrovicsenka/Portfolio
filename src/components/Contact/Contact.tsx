@@ -1,6 +1,6 @@
 import './Contact.scss';
-import { Github } from '../../assets/svg/github.tsx';
-import { Linkedin } from '../../assets/svg/linkedin.tsx';
+import { Github } from '../../assets/svg/Github.tsx';
+import { Linkedin } from '../../assets/svg/Linkedin.tsx';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import './WhatIDo.scss';
-import { PlanningAndAnalysis } from '../../assets/svg/planning-and-analysis.tsx';
-import { CustomSolutionDevelopment } from '../../assets/svg/custom-solution-development.tsx';
-import { ResponsiveWebDesign } from '../../assets/svg/responsive-web-design.tsx';
-import { VersionControl } from '../../assets/svg/version-control.tsx';
-import { AgileMethodology } from '../../assets/svg/agile-methodology.tsx';
+import { PlanningAndAnalysis } from '../../assets/svg/Planning-and-analysis.tsx';
+import { CustomSolutionDevelopment } from '../../assets/svg/Custom-solution-development.tsx';
+import { ResponsiveWebDesign } from '../../assets/svg/Responsive-web-design.tsx';
+import { VersionControl } from '../../assets/svg/Version-control.tsx';
+import { AgileMethodology } from '../../assets/svg/Agile-methodology.tsx';
 
 const activities = [
   {

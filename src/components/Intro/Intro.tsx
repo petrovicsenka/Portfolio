@@ -1,6 +1,6 @@
 import './Intro.scss';
 import bg from '../../assets/png/image.png';
-import { LearnMore } from '../../assets/svg/learn-more.tsx';
+import { LearnMore } from '../../assets/svg/Learn-more.tsx';
 import { Link } from 'react-scroll';
 
 const Intro = () => {

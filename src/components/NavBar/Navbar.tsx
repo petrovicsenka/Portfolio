@@ -1,8 +1,8 @@
 import './Navbar.scss';
 import logo from '/logo.png';
-import { Contact } from '../../assets/svg/contact.tsx';
-import { BurgerMenu } from '../../assets/svg/burger-menu.tsx';
-import { Close } from '../../assets/svg/close.tsx';
+import { Contact } from '../../assets/svg/Contact.tsx';
+import { BurgerMenu } from '../../assets/svg/Burger-menu.tsx';
+import { Close } from '../../assets/svg/Close.tsx';
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
