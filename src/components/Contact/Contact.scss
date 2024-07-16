@@ -18,7 +18,9 @@
   max-width: 60rem;
 }
 
-.name, .email, .msg {
+.name,
+.email,
+.msg {
   font-size: medium;
   width: 100%;
   max-width: 40rem;
@@ -45,10 +47,8 @@
 
 .link {
   object-fit: cover;
-  height: 3rem;
-  width: 3rem;
   border-radius: 0.2rem;
-  margin: 0 0.5rem;
+  margin: 0.2rem 0.5rem;
 }
 
 .link:hover {

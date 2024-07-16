@@ -9,7 +9,6 @@ import WhatIDo from './components/WhatIDo/WhatIDo';
 import Skills from './components/Skills/Skills';
 
 function App() {
-
   return (
     <div>
       <Navbar />
@@ -21,7 +20,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App;

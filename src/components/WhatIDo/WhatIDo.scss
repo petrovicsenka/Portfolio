@@ -27,6 +27,7 @@
 
 .whatIDoBar {
   display: flex;
+  align-items: center;
   margin: 1rem;
   padding: 0.8rem 2rem;
   border-radius: 0.5rem;
@@ -36,8 +37,11 @@
 .whatIDoBarImg {
   object-fit: cover;
   height: 4rem;
+  width: 4rem;
+  // margin-top: 1rem;
   margin-right: 1rem;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg)
+    brightness(200%) contrast(100%);
 }
 
 .whatIDoBarText {
@@ -49,14 +53,25 @@
     font-size: 1rem;
     font-weight: 200;
     margin: 0.3rem;
+    text-align: justify;
   }
+}
 
+.paragraph {
+  max-width: 650px; //sredi u media query za ostale dimenzije
 }
 
 @media screen and (max-width: 720px) {
-  .whatIDoBarText { 
+  .whatIDoBarText {
     p {
       font-size: 3.5vw;
+      text-align: left;
     }
+  }
+
+  .whatIDoBarImg {
+    margin-top: 0;
+    height: 4rem;
+    width: 10rem;
   }
 }

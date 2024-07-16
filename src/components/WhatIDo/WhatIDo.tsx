@@ -1,44 +1,40 @@
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import './WhatIDo.scss';
-import planningAndAnalysis from '../../assets/planning-and-analysis.svg';
-import customSolutionDevelopment from '../../assets/custom-soluton-development.svg';
-import responsiveWebDesign from '../../assets/responsive-web-design.svg';
-import versionControl from '../../assets/version-control.svg';
-import agileMethodology from '../../assets/agile-methodology.svg';
+import { PlanningAndAnalysis } from '../../assets/svg/planning-and-analysis.tsx';
+import { CustomSolutionDevelopment } from '../../assets/svg/custom-solution-development.tsx';
+import { ResponsiveWebDesign } from '../../assets/svg/responsive-web-design.tsx';
+import { VersionControl } from '../../assets/svg/version-control.tsx';
+import { AgileMethodology } from '../../assets/svg/agile-methodology.tsx';
 
 const activities = [
   {
     title: 'Planning and Analysis',
-    imgSrc: planningAndAnalysis,
-    alt: 'PlanningAndAnalysis',
+    Icon: PlanningAndAnalysis,
     description:
       'Understanding user needs and translating them into technical requirements. Defining project functionalities and specifications. Creating technical documentation.',
   },
   {
     title: 'Custom Solution Development',
-    imgSrc: customSolutionDevelopment,
-    alt: 'CustomSolutionDevelopment',
+    Icon: CustomSolutionDevelopment,
     description:
       'Web application development to meet specific clients’ preferences. Writing clean, efficient, and scalable code using modern technologies like TypeScript, JavaScript, Angular, React, Gatsby...',
   },
   {
     title: 'Responsive Web Design',
-    imgSrc: responsiveWebDesign,
-    alt: 'ResponsiveWebDesign',
+    Icon: ResponsiveWebDesign,
     description:
       'Designing and developing applications with a Mobile-First approach to ensure a seamless experience across all devices. Creating fluid grids, flexible images and media queries to ensure that web applications adjust smoothly to different screen sizes and resolutions. Providing cross-browser compatibility.',
   },
   {
     title: 'Version Control and Collaboration',
-    imgSrc: versionControl,
-    alt: 'VersionControl',
-    description: 'Using Git for code versioning and team collaboration.',
+    Icon: VersionControl,
+    description:
+      'Using Git for code versioning and team collaboration. Ensuring code quality through code reviews and continuous integration practices.',
   },
   {
     title: 'Agile Methodology',
-    imgSrc: agileMethodology,
-    alt: 'AgileMethodology',
+    Icon: AgileMethodology,
     description:
       'Working in Agile environments, including sprint planning, daily stand-up meetings and retrospectives.',
   },
@@ -72,14 +68,10 @@ const WhatIDo = () => {
                     },
                   }}
                 >
-                  <img
-                    src={activity.imgSrc}
-                    alt={activity.alt}
-                    className='whatIDoBarImg'
-                  />
+                  <activity.Icon className='whatIDoBarImg' />
                   <div className='whatIDoBarText'>
                     <h2>{activity.title}</h2>
-                    <p>{activity.description}</p>
+                    <p className='paragraph'>{activity.description}</p>
                   </div>
                 </motion.div>
               )}

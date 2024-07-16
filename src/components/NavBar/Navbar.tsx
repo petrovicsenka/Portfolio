@@ -1,8 +1,8 @@
 import './Navbar.scss';
 import logo from '/logo.png';
-import contactImg from '../../assets/contact.svg';
-import menu from '../../assets/burger-menu.svg';
-import closeIcon from '../../assets/close.svg';
+import { Contact } from '../../assets/svg/contact.tsx';
+import { BurgerMenu } from '../../assets/svg/burger-menu.tsx';
+import { Close } from '../../assets/svg/close.tsx';
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
@@ -78,18 +78,21 @@ const Navbar = () => {
             ?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <img src={contactImg} alt='' className='desktopMenuImg' />
+        <Contact className={'desktopMenuImg'} />
         Contact me
       </button>
-      <img
-        src={showMenu ? closeIcon : menu}
-        alt='Menu'
+      <div
         className='mobMenuIcon'
         ref={iconRef}
-        onClick={() => {
-          setShowMenu(!showMenu);
-        }}
-      />
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        {showMenu ? (
+          <Close className='mobMenuIcon' />
+        ) : (
+          <BurgerMenu className='mobMenuIcon' />
+        )}
+      </div>
+
       <motion.div
         ref={menuRef}
         className='navMenu'
@@ -123,12 +126,9 @@ const Navbar = () => {
         overlayClassName='overlay'
       >
         <img src={logo} alt='Enlarged Logo' className='enlargedLogo' />
-        <img
-          src={closeIcon}
-          alt='Close'
-          className='closeButton'
-          onClick={toggleModal}
-        />
+        <div className='closeButton' onClick={toggleModal}>
+          <Close />
+        </div>
       </Modal>
     </nav>
   );
