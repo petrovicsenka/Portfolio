@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Modal from 'react-modal';
+import Button from '../Button/Button.tsx';
 
 const navItems = [
   { id: 'intro', label: 'Home', offset: -100 },
@@ -70,7 +71,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <button
+      <Button
         className='desktopMenuBtn'
         onClick={() => {
           document
@@ -80,7 +81,7 @@ const Navbar = () => {
       >
         <Contact className={'desktopMenuImg'} />
         Contact me
-      </button>
+      </Button>
       <div
         className='mobMenuIcon'
         ref={iconRef}

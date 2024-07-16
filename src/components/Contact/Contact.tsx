@@ -3,6 +3,7 @@ import { Github } from '../../assets/svg/Github.tsx';
 import { Linkedin } from '../../assets/svg/Linkedin.tsx';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import Button from '../Button/Button';
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -58,9 +59,7 @@ const Contact = () => {
           placeholder='Your message'
           required
         ></textarea>
-        <button type='submit' value='Send' className='submitBtn'>
-          Submit
-        </button>
+        <Button type='submit'>Submit</Button>
         <div className='links'>
           <a
             href='https://github.com/petrovicsenka'

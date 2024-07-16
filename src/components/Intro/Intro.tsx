@@ -2,6 +2,7 @@ import './Intro.scss';
 import bg from '../../assets/png/image.png';
 import { LearnMore } from '../../assets/svg/Learn-more.tsx';
 import { Link } from 'react-scroll';
+import Button from '../Button/Button';
 
 const Intro = () => {
   return (
@@ -23,12 +24,13 @@ const Intro = () => {
           to='learnMore'
           smooth={true}
           duration={500}
+          offset={222}
           className='button'
         >
-          <button className='btn'>
-            <LearnMore className={'btnImg'} />
+          <Button>
+            <LearnMore className='btnImg' />
             Learn more about me
-          </button>
+          </Button>
         </Link>
       </div>
       <img src={bg} alt='Profile' className='bg' />
