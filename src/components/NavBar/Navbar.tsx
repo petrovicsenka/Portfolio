@@ -126,9 +126,11 @@ const Navbar = () => {
         className='modal'
         overlayClassName='overlay'
       >
-        <img src={logo} alt='Enlarged Logo' className='enlargedLogo' />
-        <div className='closeButton' onClick={toggleModal}>
-          <Close />
+        <div className='modalContent'>
+          <img src={logo} alt='Enlarged Logo' className='enlargedLogo' />
+          <div className='closeButton' onClick={toggleModal}>
+            <Close />
+          </div>
         </div>
       </Modal>
     </nav>
