@@ -115,17 +115,6 @@
   position: relative;
 }
 
-.closeButton {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -40px;
-  right: -30px;
-  width: 130px;
-  height: 130px;
-}
-
 .modalContent {
   display: flex;
   align-items: center;
@@ -138,6 +127,17 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.closeButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -40px;
+  right: -30px;
+  width: 130px;
+  height: 130px;
 }
 
 @media screen and (max-width: 400px) {
