@@ -38,7 +38,6 @@
   object-fit: cover;
   height: 4rem;
   width: 4rem;
-  // margin-top: 1rem;
   margin-right: 1rem;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg)
     brightness(200%) contrast(100%);
@@ -58,7 +57,7 @@
 }
 
 .paragraph {
-  max-width: 650px; //sredi u media query za ostale dimenzije
+  max-width: 650px;
 }
 
 @media screen and (max-width: 720px) {

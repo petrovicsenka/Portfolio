@@ -1,4 +1,4 @@
-#education { //mozda i ovo izdvoj u posebnu klasu, ponavlja se
+#education {
   padding-top: 3rem;
 }
 
@@ -113,10 +113,9 @@ body {
   .educationItem:nth-child(odd)::before {
     left: -36px;
   }
-  
+
   .educationItem:nth-child(even) {
     left: 0;
     text-align: left;
   }
-  
 }
