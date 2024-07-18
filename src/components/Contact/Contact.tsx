@@ -26,6 +26,8 @@ const Contact = () => {
           },
           (error) => {
             console.log('FAILED...', error.text);
+            (e.target as HTMLFormElement).reset();
+            alert('An error occurred. Please, try again!');
           }
         );
     }
