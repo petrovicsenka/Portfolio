@@ -31,6 +31,7 @@
   h3 {
     color: #9297ff;
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -41,6 +42,12 @@
 
   .skillBars {
     margin: 1.5rem;
+  }
+
+  .skillBar {
+    h3 {
+      font-size: 1.2rem;
+    }
   }
 }
 
