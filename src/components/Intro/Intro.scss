@@ -4,7 +4,7 @@
   height: calc(100% - 5rem);
   width: 100vw;
   max-width: 85rem;
-  margin: 0 auto;
+  margin: -3rem auto 0 auto;
   overflow: hidden;
   position: relative;
 }
@@ -17,7 +17,7 @@
 }
 
 .introContent {
-  padding: 2rem;
+  padding: 10rem 0rem 0rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,6 +52,26 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .introContent {
+    padding: 10rem 2rem 0rem 7rem;
+  }
+
+  .bg {
+    padding: 0 2rem 0 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #intro {
+    margin: -3rem auto 0 auto;
+  }
+
+  .introContent {
+    padding: 10rem 0rem 0rem 6rem;
+  }
+}
+
 @media screen and (max-width: 840px) {
   #intro {
     grid-template-columns: 1fr;
@@ -75,5 +95,37 @@
     margin: 0 0.5rem 0 0;
     height: 3vh;
     width: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    margin: 0 auto;
+  }
+
+  .introContent {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .bg {
+    padding: 0 0 0 1rem;
+  }
+
+  .introPara {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .introContent {
+    padding: 1rem 3rem 1rem 0rem;
+  }
+
+  .bg {
+    padding: 1rem 3rem 1rem 0rem;
+  }
+
+  .introPara {
+    padding: 1rem 2rem 1rem 1rem;
   }
 }
