@@ -140,11 +140,15 @@
   height: 130px;
 }
 
-@media screen and (max-width: 400px) {
-  .navMenu {
-    position: absolute;
-    top: 6rem;
-    right: 3.5rem;
+@media screen and (max-width: 1440px) {
+  .navbar {
+    margin: 0 1rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    margin: 0 auto;
   }
 }
 
@@ -163,5 +167,13 @@
 
   .enlargedLogo {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navMenu {
+    position: absolute;
+    top: 6rem;
+    right: 3.5rem;
   }
 }
