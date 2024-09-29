@@ -41,7 +41,7 @@ const Intro = () => {
       <div className='introContent'>
         <span className='hello'>Hello, </span>
         <span>
-          I am <span className='blueText'>Senka Petrović,</span> <br />
+          I am <span className='blueText'>Senka Petrović</span> <br />
           Software Engineer
         </span>
         <p className='introPara'>
