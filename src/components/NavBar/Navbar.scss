@@ -3,7 +3,7 @@
   height: 6rem;
   width: 100vw;
   max-width: 85rem;
-  margin: 0 auto;
+  margin: 0;
   padding: 1vh 10vw 1vh 10vw;
   display: flex;
   align-items: center;
@@ -138,12 +138,6 @@
   right: -30px;
   width: 130px;
   height: 130px;
-}
-
-@media screen and (max-width: 1440px) {
-  .navbar {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 1200px) {
