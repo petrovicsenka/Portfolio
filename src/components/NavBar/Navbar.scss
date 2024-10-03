@@ -142,17 +142,17 @@
 
 @media screen and (max-width: 1440px) {
   .navbar {
-    margin: 0 1rem 0 2rem;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .navbar {
-    margin: 0 auto;
+    margin: 0 0rem 0 -2rem;
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
   .mobMenuIcon {
     display: flex;
   }
@@ -167,6 +167,18 @@
 
   .enlargedLogo {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    margin: 0 0 0 -1rem;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .navbar {
+    margin: 0 0.5rem 0 -0.5rem;
   }
 }
 
