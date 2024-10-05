@@ -19,7 +19,7 @@
 }
 
 .whatIDoBars {
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1.5rem 2rem 0 1.5rem;
   width: 100vw;
   max-width: 80%;
   text-align: left;
@@ -60,6 +60,12 @@
   max-width: 650px;
 }
 
+@media screen and (max-width: 992px) {
+  .whatIDoBars {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .whatIDoBarText {
     p {
@@ -72,5 +78,25 @@
     margin-top: 0;
     height: 4rem;
     width: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .whatIDoDesc {
+    padding: 0 2rem;
+  }
+
+  .whatIDoBars {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .whatIDoDesc {
+    padding: 0 1.5rem 0 2rem;
+  }
+
+  .whatIDoBars {
+    margin: 1.5rem 1.3rem 0 1.5rem;
   }
 }
