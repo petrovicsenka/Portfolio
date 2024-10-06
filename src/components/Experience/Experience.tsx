@@ -36,7 +36,7 @@ const experiences = [
     title: 'Solution Developer, Engineering Software Lab d.o.o, Belgrade',
     date: 'February 2021 – June 2022',
     responsibilities: [
-      'Complex data management systems development and maintenance using a range of technologies: Scala and Apache Spark in Big Data and Spring Boot, Angular, Oracle and MariaDB for Full-stack development.',
+      'Complex data management systems development and maintenance using a range of technologies: Scala and Apache Spark in Big Data and Spring Boot, Oracle and MariaDB for Backend development.',
     ],
   },
 ];

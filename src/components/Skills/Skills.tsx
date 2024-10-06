@@ -35,7 +35,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <section id='skills'>
-      <span className='sectionTitle'>Skills</span>
+      <span className='sectionTitle title'>Skills</span>
       <div className='list'>
         {skillsData.map((skillGroup, index) => (
           <InView threshold={0.25} triggerOnce={true} key={index}>

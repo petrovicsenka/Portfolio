@@ -7,20 +7,24 @@ import { useState, useEffect } from 'react';
 import debounce from 'lodash/debounce';
 
 const offsets = {
+  xsmall: 500,
   small: 550,
-  medium: 450,
-  xmedium: 140,
-  slarge: 100,
-  large: 120,
-  xlarge: 222,
+  smedium: 500,
+  medium: 540,
+  xmedium: 80,
+  xxmedium: 90,
+  large: 110,
+  xlarge: 230,
 };
 
 const getOffset = (width: number) => {
-  if (width < 450) return offsets.small;
-  if (width < 840) return offsets.medium;
-  if (width < 1000) return offsets.slarge;
-  if (width < 1280) return offsets.xmedium;
-  if (width < 1560) return offsets.large;
+  if (width <= 400) return offsets.xsmall;
+  if (width <= 450) return offsets.small;
+  if (width <= 576) return offsets.smedium;
+  if (width <= 768) return offsets.medium;
+  if (width <= 992) return offsets.xmedium;
+  if (width <= 1200) return offsets.xxmedium;
+  if (width <= 1440) return offsets.large;
   return offsets.xlarge;
 };
 

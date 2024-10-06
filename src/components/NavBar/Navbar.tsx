@@ -15,6 +15,7 @@ const navItems = [
   { id: 'skills', label: 'Skills', offset: -50 },
   { id: 'experience', label: 'Experience', offset: -50 },
   { id: 'education', label: 'Education', offset: -50 },
+  { id: 'contact', label: 'Contact me', offset: -50 },
 ];
 
 const Navbar = () => {

@@ -14,3 +14,21 @@
     background-color: #ffffff;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .btn {
+    margin: 1.5rem 1rem 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .btn {
+    margin: 1.5rem 1rem 1.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .btn {
+    margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+  }
+}
