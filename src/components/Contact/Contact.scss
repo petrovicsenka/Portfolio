@@ -32,6 +32,11 @@
   background: #323232;
 }
 
+.msg {
+  max-height: 15rem;
+  resize: vertical;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
