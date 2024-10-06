@@ -7,7 +7,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin: auto;
+  // padding: 3rem 3rem 0 0rem;
   padding-top: 3rem;
 }
 
@@ -58,6 +60,18 @@
 
 .paragraph {
   max-width: 650px;
+}
+
+@media screen and (max-width: 1440px) {
+  #about {
+    padding: 3rem 0 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #about {
+    padding: 3rem 0 0 0;
+  }
 }
 
 @media screen and (max-width: 992px) {

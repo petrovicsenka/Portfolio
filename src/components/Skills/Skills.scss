@@ -1,58 +1,127 @@
-#skills {
-  padding: 0;
-  padding-top: 3rem;
-  margin: auto;
-  width: 100vw;
-  max-width: 85rem;
-}
+#skills { 
+  padding: 0; 
+  padding-top: 3rem; 
+  margin: auto; 
+  width: 100vw; 
+  max-width: 85rem; 
+} 
 
-.list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.list { 
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 1rem; 
+  margin: 2.2rem; 
+  padding: 0 1rem 0 0; 
 
-  ul {
-    list-style-type: none;
+  .skillBar { 
+    margin: 0; 
+  } 
+} 
+
+.skillBars { 
+  width: 100vw; 
+  max-width: 80%; 
+  text-align: left; 
+} 
+
+.skillBar { 
+  display: block; 
+  margin: 1rem; 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+  background: #323232; 
+
+  h3 { 
+    color: #9297ff; 
+    margin-bottom: 0.5rem; 
+    font-size: 1.2rem; 
+  } 
+} 
+
+.title { 
+  padding: 0 1rem 0 0; 
+} 
+
+@media screen and (max-width: 1440px) { 
+  #skills { 
+    padding: 3rem 0 0 2rem; 
+  } 
+
+  .list { 
+    padding: 0 1.5rem 0 0; 
   }
-}
 
-.skillBars {
-  width: 100vw;
-  max-width: 80%;
-  text-align: left;
-}
+} 
 
-.skillBar {
-  display: block;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background: #323232;
+@media screen and (max-width: 1200px) { 
+  #skills { 
+    margin: auto; 
+    padding: 3rem 0 0 0.5rem; 
+  } 
+} 
 
-  h3 {
-    color: #9297ff;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-}
+@media screen and (max-width: 1030px) { 
+  .list { 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+    margin: 2.2rem; 
+  } 
 
-@media screen and (min-width: 550px) {
+  .skillBar { 
+    margin: 0; 
+  } 
+} 
+
+@media screen and (max-width: 992px) and (max-height: 1024px) { 
+  #skills { 
+    padding: 3rem 0rem 0 1.2rem; 
+  } 
+} 
+
+@media screen and (max-width: 576px) {  
+  #skills { 
+    padding: 3rem 0rem 0 0.8rem; 
+  } 
+
+  .title { 
+    padding: 0; 
+  } 
+} 
+
+@media screen and (max-width: 550px) { 
+  .list { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    margin: 1rem; 
+  } 
+
+  .skillBar { 
+    margin: 0; 
+    font-size: 0.9rem; 
+  } 
+} 
+
+@media screen and (max-width: 394px) { 
+  #skills { 
+    padding: 3rem 0 0 0.1rem; 
+  } 
+
   .list {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    margin: 1.8rem auto 0 1.4rem;
 
-  .skillBars {
-    margin: 1.5rem;
-  }
-
-  .skillBar {
     h3 {
-      font-size: 1.2rem;
+      font-size: 1rem; 
     }
   }
-}
+} 
 
-@media screen and (min-width: 1030px) {
+@media screen and (max-width: 384px) { 
+  #skills { 
+    padding: 3rem 0 0 1rem; 
+  } 
+
   .list {
-    grid-template-columns: repeat(6, 1fr);
+    margin: 2.2rem;
+    padding: 0 0.7rem 0 0rem;
   }
-}
+} 
