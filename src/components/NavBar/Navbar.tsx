@@ -57,7 +57,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <img src={logo} alt='Logo' className='logo' onClick={toggleModal} />
       <div className='desktopMenu'>
-        {navItems.map((item, index) => (
+        {navItems.filter((item) => item.label !== 'Contact me').map((item, index) => (
           <Link
             key={index}
             activeClass='active'
